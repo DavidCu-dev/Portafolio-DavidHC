@@ -1,0 +1,37 @@
+---
+import "@fontsource-variable/onest";
+import "./src/styles/global.css";
+import HeaderY from "../components/HeaderY.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+	<meta name="description" content="Portafolio de David Hernández Cuevas, un programador y desarrollador web con experiencia en aplicaciones web y mantenimiento de sitios. Disponible para nuevas oportunidades." />
+    <title>Portafolio David Hernández Cuevas - Programador y Desarrollador Web</title>
+	</head>
+	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+    <HeaderY />
+    <slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+    color-scheme: light dark;}
+html {
+    font-family: "onest variable", system-ui, sans-serif;
+}
+
+	body {
+    background: #050505;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+	}
+</style>

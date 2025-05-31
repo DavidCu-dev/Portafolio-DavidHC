@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import GitHubIcon from "../components/icons/GitHubIcon.astro";
+import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
+import SocialPill from "../components/SocialPill.astro";
+import MailIcon from "../components/icons/MailIcon.astro";
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44 ">
+		<h1 class="text-white text-4xl font-bold justify-center flex flex-row gap-x-4 pb-1">
+			Hola, soy David Hernández Cuevas 
+			
+		</h1> 
+		<div class="flex justify-center-safe py-4 items-center">
+			<Badge>Web Developer</Badge> 
+			<Badge>Frontend Developer</Badge>  
+			<Badge>Disponible para trabajar</Badge>
+		</div>
+		<h2 class="text-xl opacity-80 py-2 text-wrap">
+			Soy un Ingeniero en Tecnologías de la Información, con experiencia desarrollando aplicaciones web y dando mantenimiento de paginas web. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades en programación. Actualmente, estoy buscando oportunidades para aplicar mis conocimientos y seguir creciendo profesionalmente.
+		</h2>
+
+		<nav class="flex gap-x-4 mt-6">
+			<SocialPill href="">
+				<LinkedInIcon class="size-6" />
+				LinkedIn
+			</SocialPill>
+			<SocialPill href="https://github.com/DavidCu-dev">
+				<GitHubIcon class="size-6" />
+				GitHub
+			</SocialPill>
+			<SocialPill href="mailto:davidhcuevas01@gmail.com">
+				<MailIcon class="size-6" />
+				davidhcuevas01@gmail.com
+			</SocialPill>
+		</nav>
+	</section>
+	</main>
+</Layout>
