@@ -8,11 +8,18 @@ import MailIcon from "../components/icons/MailIcon.astro";
 import Experience from '../components/Experience.astro';
 import SectionContenedor from '../components/SectionContenedor.astro';
 import BriefCaseIcon from "../components/icons/BriefCaseIcon.astro";
+import ContactoIcon from '../components/icons/ContactoIcon.astro';
+import InstaIcon from '../components/icons/InstaIcon.astro';
 ---
 
 <Layout>
 	<main class="px-4">
-		<SectionContenedor class="py-44 pb-22">
+
+		<SectionContenedor class="py-15 pb-22" id="sobre-mi">
+			<img
+			class="rounded-full size-24 md:w-48 md:h-48 lg:w-64 lg:h-64 mx-auto mb-6 shadow-lg" 
+			src="https://i.pinimg.com/736x/63/6a/2d/636a2d40ba8480b5e769c1e16980e116.jpg" 
+			alt="asas">
 		<h1 
 			class="text-white text-2xl md:text-4xl lg:text-4xl font-bold justify-center flex flex-row gap-x-4 pb-2 lg:pb-6">
 			Hola, soy David Hernández Cuevas 
@@ -26,7 +33,27 @@ import BriefCaseIcon from "../components/icons/BriefCaseIcon.astro";
 			Soy un Ingeniero en Tecnologías de la Información, con experiencia desarrollando aplicaciones web y dando mantenimiento de paginas web. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades en programación. Actualmente, estoy buscando oportunidades para aplicar mis conocimientos y seguir creciendo profesionalmente.
 		</h2>
 
-		<nav class="flex gap-4 mt-6 flex-wrap">
+		
+	</SectionContenedor>
+
+	<SectionContenedor id="experiencia">
+		<h2 class="text-4xl text-white font-bold pb-6 si flex items-center gap-x-3">
+			<BriefCaseIcon class="inline size-8" />
+			Experiencia Profesional
+		</h2>
+		<Experience />
+
+	<SectionContenedor class="text-lg mb-10" id="contacto">
+
+			<h2 class="text-4xl text-white font-bold pb-6">
+				<ContactoIcon class="inline size-7" />
+				Contacto
+			</h2>
+			<p class="text-pretty max-w-[700px]">
+				Si estás interesado en colaborar conmigo o tienes alguna pregunta, no dudes en contactarme a través de mis redes sociales o enviándome un correo electrónico.
+			</p>
+
+			<nav class="flex gap-4 mt-6 flex-wrap">
 			<SocialPill href="">
 				<LinkedInIcon class="size-4 lg:size-6" />
 				LinkedIn
@@ -39,14 +66,12 @@ import BriefCaseIcon from "../components/icons/BriefCaseIcon.astro";
 				<MailIcon class="size-4 lg:size-6" />
 				davidhcuevas01@gmail.com
 			</SocialPill>
+			<SocialPill href="https://www.instagram.com/deivi.yb?igsh=MWg1amsxYjQ2eGN6aQ==">
+				<InstaIcon class="size-4 lg:size-6" />
+				Instagram
+			</SocialPill>
 		</nav>
-	</SectionContenedor>
-	<SectionContenedor id="experiencia">
-		<h2 class="text-4xl text-white font-bold pb-6 si flex items-center gap-x-3">
-			<BriefCaseIcon class="inline size-8" />
-			Experiencia Profesional
-		</h2>
-		<Experience />
-	</SectionContenedor>
+
+	</SectionCotenedor>
 	</main>
 </Layout>

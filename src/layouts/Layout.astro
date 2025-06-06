@@ -2,6 +2,7 @@
 import "@fontsource-variable/onest";
 import "./src/styles/global.css";
 import HeaderY from "../components/HeaderY.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -15,9 +16,10 @@ import HeaderY from "../components/HeaderY.astro";
     <title>Portafolio David Hernández Cuevas - Programador y Desarrollador Web</title>
 	</head>
 	<body class="px-3">
-		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+		<div class="fixed inset-0 -z-10 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
     <HeaderY />
     <slot />
+    <Footer />
 	</body>
 </html>
 
