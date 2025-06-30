@@ -10,6 +10,8 @@ import SectionContenedor from '../components/SectionContenedor.astro';
 import BriefCaseIcon from "../components/icons/BriefCaseIcon.astro";
 import ContactoIcon from '../components/icons/ContactoIcon.astro';
 import InstaIcon from '../components/icons/InstaIcon.astro';
+import Proyects from '../components/proyects.astro';
+import ProyecIcon from '../components/icons/ProyecIcon.astro';
 ---
 
 <Layout>
@@ -29,19 +31,28 @@ import InstaIcon from '../components/icons/InstaIcon.astro';
 			<Badge>Frontend Developer</Badge>  
 			<Badge>Disponible para trabajar</Badge>
 		</div>
-		<h2 class="text-xl lg:text-2xl opacity-80 py-2 text-pretty max-w-[700px]">
+		<h2 class=" text-center text-xl lg:text-2xl opacity-80 py-2 text-pretty max-w-[900px]">
 			Soy un Ingeniero en Tecnologías de la Información, con experiencia desarrollando aplicaciones web y dando mantenimiento de paginas web. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades en programación. Actualmente, estoy buscando oportunidades para aplicar mis conocimientos y seguir creciendo profesionalmente.
 		</h2>
 
 		
 	</SectionContenedor>
 
-	<SectionContenedor id="experiencia">
+	<SectionContenedor id="experiencia" >
 		<h2 class="text-4xl text-white font-bold pb-6 si flex items-center gap-x-3">
 			<BriefCaseIcon class="inline size-8" />
 			Experiencia Profesional
 		</h2>
 		<Experience />
+	</SectionContenedor>
+
+	<SectionContenedor id="proyectos" class=" pb-6">
+		<h2 class="text-4xl text-white font-bold pb-6 flex intems-center gap-x-3">
+			<ProyecIcon class="inline size-10" />
+			Proyectos
+		</h2>
+		<Proyects />
+	</SectionContenedor>
 
 	<SectionContenedor class="text-lg mb-10" id="contacto">
 
